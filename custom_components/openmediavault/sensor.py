@@ -36,27 +36,27 @@ ATTR_MEMORY_USAGE = 'memused'
 MONITORED_CONDITIONS = {
     ATTR_HOSTNAME: [
         'Hostname',
-        'mdi:web'
+        'mdi:nas'
     ],
     ATTR_VERSION: [
         'Version',
-        'mdi:web'
+        'mdi:information-outline'
     ],
     ATTR_PROCESSOR: [
         'Processor',
-        'mdi:web'
+        'mdi:cpu-64-bit'
     ],
     ATTR_KERNEL: [
         'Kernel',
-        'mdi:web'
+        'mdi:linux'
     ],
     ATTR_SYSTEM_TIME: [
         'System time',
-        'mdi:web'
+        'mdi:clock-outline'
     ],
     ATTR_UPTIME: [
         'Uptime',
-        'mdi:web'
+        'mdi:timeline-clock-outline'
     ],
     ATTR_LOAD_AVERAGE: [
         'Load average',
@@ -64,11 +64,11 @@ MONITORED_CONDITIONS = {
     ],
     ATTR_CPU_USAGE: [
         'CPU usage',
-        'mdi:web'
+        'mdi:cpu-64-bit'
     ],
     ATTR_MEMORY_USAGE: [
         'Memory usage',
-        'mdi:web'
+        'mdi:memory'
     ]
 }
 
