@@ -3,6 +3,9 @@ A home assistant component that exposes openmediavault as a sensor.
 
 ### Installation
 
+Check if de setting monitoring is true
+Go to openmediavault system/monitoring/enable 'on'
+
 Copy this folder into your config directory. You should end up with a file path similar to the following: `<config_dir>/custom_components/openmediavault/`.
 
 Add the following to your `configuration.yaml` file:
@@ -11,19 +14,20 @@ Add the following to your `configuration.yaml` file:
 # Example configuration.yaml entry
 sensor:
   platform: openmediavault
+  name: openmediavault
   host: http://openmediavault
   username: admin
   password: !secret openmediavault_password
   monitored_conditions:
     -  hostname
     -  version
-    -  processor
+    -  cpumodelname
     -  kernel
-    -  system_time
+    -  time
     -  uptime
-    -  load_average
-    -  cpu_usage
-    -  memory_usage
+    -  loadaverage
+    -  cpuusage
+    -  memused
 ```
 
 ### Configuration
@@ -46,8 +50,8 @@ openmediavault
 
     Username used for logging in to openmediavault.
 
-Default value:
-admin
+    Default value:
+    admin
 
 **password**
     (string) (Required)
